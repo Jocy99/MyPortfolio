@@ -1,0 +1,27 @@
+/* This gives the banner correct sizing and placement */
+#Banner { 
+    width: 100%;
+}
+/* Adjusts profile picture to the corner of the website */
+.Portfolio_Picture {
+    width: 10px; 
+    border-radius: 30%;
+}
+ /*This selector gives our sections a size?  */
+#AboutMe {
+    width: auto;
+    height: auto;
+}
+#Work {
+    width: auto;
+    height: auto;
+}
+#ContactMe {
+    width: auto;
+    height: auto;
+}
+/* Here we can remove bullet points and make items appear side by side on the right of the website */
+nav, ul {
+    display: inline-block;
+    list-style: none;
+}
