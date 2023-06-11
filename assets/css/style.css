@@ -1,27 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 /* This gives the banner correct sizing and placement */
 #Banner { 
-    width: 100%;
+   height: 100px;
+   object-fit: cover;
+   background-image: url(../images/Screenshot\ 2023-06-10\ 132239.png);
+   position: relative;
 }
+/* moves h3 in banner to better position*/
+#Banner div h3 {
+display: flex;
+height: 30px;
+align-items: flex-end;
+}
+
 /* Adjusts profile picture to the corner of the website */
-.Portfolio_Picture {
-    width: 10px; 
+.profilepicture {
+    max-width: 50px; 
     border-radius: 30%;
 }
- /*This selector gives our sections a size?  */
-#AboutMe {
-    width: auto;
-    height: auto;
+ .article {
+        display: flex;
+        align-items: center;
+        width: auto;
+        height: auto;
+        margin: 20em;
+       
+ }
+#section1 {
+    float: right;
+    width: 50%;
+    margin-right: 30px;
+    margin-top: 20px;
 }
 #Work {
+    float: left;
     width: auto;
     height: auto;
+    margin: 60px;
+}
+#section2 {
+    margin: 10px;
+    float: right;
+    width: 50%;
+    margin-right: 30px;
+}
+#pj2 {
+    margin: 20px;
+    float: right;
+    width: 50%;
+    margin-right: 30px;
+} 
+#pj3 {
+    margin: 20px;
+    float: right;
+    width: 50%;
+    margin-right: 30px;
+}
+#pj4 {
+    margin: 20px;
+    float: right;
+    width: 50%;
+    margin-right: 30px;
+}
+#pj5 {
+    margin: 20px;
+    float: right;
+    width: 50%;
+    margin-right: 30px;
 }
 #ContactMe {
+    float: left;
     width: auto;
     height: auto;
+    margin-top: 70px;
+    margin-left: 30px;
+    position: static;
 }
+#contactlist ul li {
+    position: absolute;
+    float: right;
+    width: 50px;
+    margin-right: 30px;
+}
+
 /* Here we can remove bullet points and make items appear side by side on the right of the website */
-nav, ul {
-    display: inline-block;
+nav ul {
+    width: 100%;
+    display: flex;
     list-style: none;
+    justify-content: space-between;
+    align-items: center; 
+}
+/* this allows to nav links to be white  */
+a {
+    color: whitesmoke;
+}
+h1 {
+    color: rgb(228 231 243);
+    background-color:rgb(33 150 243 / 50%);
+    padding: 5px 19px 5px 5px;
+    margin: 16px 16px 20px 0px;
+}
+/* here the words on the banner are being highlighted and positioned */
+#Banner h3{
+    color: lightblue;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    
+}
+/* this code controls the header position and color styles */
+header {
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(1 4 8 / 51%);
+    height: 80px;
+    color: #9e9e9ee2;
+}
+nav {
+    width: 370px;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+/* this allows us to move the text over the banner */
+#coolheader h3 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    display: flex;
+    color: #c2d2e9;
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+    background-color:  rgb(1 4 8 / 51%);
+    padding: 10px;
+}
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: end;
+    min-height: 100vh;
 }
