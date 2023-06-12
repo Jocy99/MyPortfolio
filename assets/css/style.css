@@ -158,3 +158,16 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+@media (max-width: 768px) {
+    body {
+        margin: 0%;
+        width: 100%;
+    }
+    .container h2 {
+        display: inline;
+        margin-left: 20px;
+    }
+}
+@media screen (max-width:375) {
+    
+}
