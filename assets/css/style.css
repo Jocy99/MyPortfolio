@@ -6,7 +6,7 @@
 #Banner { 
    height: 160px;
    object-fit: cover;
-   background-image: url(../images/Screenshot\ 2023-06-10\ 132239.png);
+   background-image: url(../images/banner.png);
    position: relative;
 }
 /* moves h3 in banner to better position*/
@@ -15,9 +15,9 @@ margin-right: 40px;
 height: 30px;
 
 }
-
 /* Adjusts profile picture to the corner of the website */
 .profilepicture {
+    top: 100px;
     margin-top: 50px;
     margin-left: 40px;
     max-width: 140px; 
@@ -31,17 +31,24 @@ height: 30px;
         flex-direction: row;
         width: auto;
         height: auto;
-        margin: 30px;
-        padding: 2% 5%;
-        justify-content: center;
+        margin: 20px;
+        padding: 1% 5%;
+        justify-content: left;
        }
-
+.section h2{
+        width: 6%;
+        margin-right: 20px;
+        border-right: 1px;
+        padding: 10px;
+        border-color: black;
+        border-right-style: solid;
+    }
 .section p {
     display: flex;
     flex-direction: column;
     float: right;
-    width: 50%;
-    margin-right: 20px;
+    width: 100%;
+    margin-left: 20px;
 }
 
 .container {
@@ -49,39 +56,48 @@ height: 30px;
     width: 50%;
     margin-right: 30px; */
     /* display: flex; */
-    background-color: aqua;
+    display: flex;
+    display: inline-block;
     width: 100px;
+}
+img {
     
-
+    max-height: 100%;
+    transition: background-color 0.3s
 }
-/* #aboutme {
-    float: right;
-    width: 50%;
+#pj1 img:hover {
+    background-color: rgb(255, 255, 255);
+   
+}
+.container h3 {
+    display: inline;
+}
+#pj1 {
+    width: 100px ;
     margin-right: 30px;
-    margin-top: 20px;
+   background-color: #9fbfee;
+    background-size: contain;
 }
-#work {  
-    float: right;
+#pj2 {  
     width: auto;
-    height: auto;
-    margin: 60p
+   
 }
 
-#contact {
-    float: right;
-    width: auto;
-    height: auto;
-    margin-top: 70px;
-    margin-left: 30px;
-    position: static;
-} */
-/* #contactlist ul li {
-    position: absolute;
-    float: right;
-    width: 50px;
-    margin-right: 30px;
-} */
+#pj3 {
 
+    width: auto;
+      
+}
+
+#pj4 {
+    margin: auto;
+
+}
+#pj5 {
+    margin: auto;
+
+
+}
 /* Here we can remove bullet points and make items appear side by side on the right of the website */
 nav ul {
     width: 100%;
