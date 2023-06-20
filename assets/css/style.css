@@ -26,6 +26,7 @@ height: 30px;
     background-image: url(../images/JocelynPic.jpg);
     background-size: contain;
 }
+/* allows all sections to be aligned */
  .section {
         display: flex;
         flex-direction: row;
@@ -35,14 +36,16 @@ height: 30px;
         padding: 1% 5%;
         justify-content: left;
        }
+/* makes the h2 apear on the left side of the border */
 .section h2{
-        width: 6%;
+        width: 9%;
         margin-right: 20px;
         border-right: 1px;
         padding: 10px;
         border-color: black;
         border-right-style: solid;
     }
+/* this allows the paragraph to appear on the right side of the border */
 .section p {
     display: flex;
     flex-direction: column;
@@ -50,7 +53,7 @@ height: 30px;
     width: 100%;
     margin-left: 20px;
 }
-
+/* gives the projects correct positioning */
 .container {
     /* float: right;
     width: 50%;
@@ -58,44 +61,85 @@ height: 30px;
     /* display: flex; */
     display: flex;
     display: inline-block;
-    width: 100px;
+    width: 100%;
 }
+/* background color for the projects text */
+.container h3 h4 {
+    background-color: blue;
+}
+/* makes the project image apear larger */
 img {
-    
+    border: 8px solid #9fbfee;
     max-height: 100%;
+    width: 100%;
     transition: background-color 0.3s
 }
+.pic1 {
+    background-image: url("../images/project1.png");
+    background-size: cover;
+    border: 8px solid #9fbfee;
+    max-height: 100%;
+    width: 100%;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: flex-end; */
+    flex-direction: column;
+}
+
+/* gives the project 1 the ability to give hover affect */
 #pj1 img:hover {
     background-color: rgb(255, 255, 255);
    
 }
+/* gives the h3 in the projects their positioning*/
 .container h3 {
-    display: inline;
+    display: inline
 }
+/* supposed to make the project one larger to take up its own line */
 #pj1 {
-    width: 100px ;
+    background-image: url("../images/project1.png");
+    background-size: cover;
+    border: 8px solid #9fbfee;
+    width: 81vw ;
+    height: 50vh;
     margin-right: 30px;
    background-color: #9fbfee;
-    background-size: contain;
 }
 #pj2 {  
-    width: auto;
-   
+    background-image: url(../images/project1.png);
+    background-size: cover;
+    border: 8px solid #9fbfee;
+    width: 39vw ;
+    height: 30vh;
+    margin-top: 5px;
+
 }
 
 #pj3 {
-
-    width: auto;
-      
+     background-image: url(../images/project1.png);
+    background-size: cover;
+    border: 8px solid #9fbfee;
+    width: 40vw ;
+    height: 30vh;
+    margin-top: 5px;  
 }
 
 #pj4 {
-    margin: auto;
-
+    background-image: url(../images/project1.png);
+    background-size: cover;
+    border: 8px solid #9fbfee;
+    width: 39vw ;
+    height: 30vh;
+    margin-top: 5px;
 }
 #pj5 {
-    margin: auto;
-
+    background-image: url(../images/project1.png);
+    background-size: cover;
+    border: 8px solid #9fbfee;
+    width: 40vw ;
+    height: 30vh;
+    margin-top: 5px;
 
 }
 /* Here we can remove bullet points and make items appear side by side on the right of the website */
@@ -134,7 +178,7 @@ nav {
     margin-right: 20px;
 }
 /* this allows us to move the text over the banner */
-#coolheader h3 {
+#bannertext h3 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
     display: flex;
@@ -146,18 +190,153 @@ nav {
     padding: 10px;
 }
 /* manipulates ul in contact me section */
-section ul {
-    width: 60%;
+.section ul {
+    width: 100%;
     display: flex;
     list-style: none;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
+    margin: 0 auto; 
 }
 /* allows footer to be at the center end of the page */
 footer {
     display: flex;
     justify-content: space-around;
 }
+
+.subcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 82vw;
+}
+
+
+
+/* styles for small screens like mobile phones */
+@media screen and (max-width:767px){
+    .section {
+        display:flex;
+        flex-direction: column;
+
+    }
+    #Banner { 
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        background-image: url(../images/banner.png);
+        position: relative;
+        background-size: cover;
+     }
+     #bannertexth3 {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        display: flex;
+        color: #9fbfee;
+        position: absolute;
+        bottom: 30px;
+        right: 60px;
+        background-color:  rgb(1 4 8 / 51%);
+        padding: 7px;
+        width: fit-content;
+    }
+    .section h2 {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 20px;
+        padding: 1% 5%;
+        align-items: center;
+        border-right: none;
+    }
+    section ul {
+        width: 60%;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .container > .pj1 h3 p {
+        background-color: blue;
+    }
+    .subcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 84vw;
+    }
+}
+
+/* styles for medium screens usually tablets */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    /* .section {
+        display:flex;
+        flex-direction: column;
+
+    }
+    #Banner { 
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        background-image: url(../images/banner.png);
+        position: relative;
+     } */
+     .section {
+        display:flex;
+        flex-direction: column;
+
+    }
+    #Banner { 
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+        background-image: url(../images/banner.png);
+        position: relative;
+        background-size: cover;
+     }
+     #bannertexth3 {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bolder;
+        display: flex;
+        color: #9fbfee;
+        position: absolute;
+        bottom: 30px;
+        right: 60px;
+        background-color:  rgb(1 4 8 / 51%);
+        padding: 7px;
+        width: fit-content;
+    }
+    .section h2 {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        margin: 20px;
+        padding: 1% 5%;
+        align-items: center;
+        border-right: none;
+    }
+    section ul {
+        width: 60%;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    .container > .pj1 h3 p {
+        background-color: blue;
+    }
+    .subcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 84vw;
+    }
+}
+}
+
 @media (max-width: 768px) {
     body {
         margin: 0%;
@@ -171,3 +350,4 @@ footer {
 @media screen (max-width:375) {
     
 }
+
