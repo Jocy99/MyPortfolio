@@ -203,6 +203,7 @@ footer {
     display: flex;
     justify-content: space-around;
 }
+
 .subcontainer {
     display: flex;
     flex-direction: row;
@@ -335,9 +336,18 @@ footer {
     }
 }
 }
-/*  large desktops*/
-/*  */
-     /* styles for extra large desktops */
-     @media  and (min-width:1200px) {
-        
-     }
+
+@media (max-width: 768px) {
+    body {
+        margin: 0%;
+        width: 100%;
+    }
+    .container h2 {
+        display: inline;
+        margin-left: 20px;
+    }
+}
+@media screen (max-width:375) {
+    
+}
+
